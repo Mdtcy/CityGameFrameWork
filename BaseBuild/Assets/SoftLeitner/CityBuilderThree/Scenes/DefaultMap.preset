@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DefaultMap
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 776118d9feb149248a632057f0956744,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Size.x
+    value: 64
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Size.y
+    value: 64
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Ground
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: WalkingBlockingTiles.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: WalkingBlockingTiles.Array.data[0]
+    value: 
+    objectReference: {fileID: 11400000, guid: 2db9cac4260a8e04194409a81d4981c3, type: 2}
+  - target: {fileID: 0}
+    propertyPath: BuildingBlockingTiles.Array.size
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BuildingBlockingTiles.Array.data[0].Tile
+    value: 
+    objectReference: {fileID: 11400000, guid: 2db9cac4260a8e04194409a81d4981c3, type: 2}
+  - target: {fileID: 0}
+    propertyPath: BuildingBlockingTiles.Array.data[0].Level.Value
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: BuildingBlockingTiles.Array.data[1].Tile
+    value: 
+    objectReference: {fileID: 11400000, guid: a544701369ea5044992dd1a9a5e8d115, type: 2}
+  - target: {fileID: 0}
+    propertyPath: BuildingBlockingTiles.Array.data[1].Level.Value
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: GridVisual
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: Variance
+    value: 0.2
+    objectReference: {fileID: 0}
