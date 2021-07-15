@@ -29,7 +29,7 @@ namespace CityBuilderCore
         public override string GetDebugText() => (Progress * 100f).ToString("F0") + "%";
 
         /// <summary>
-        /// 增加时间，参数是倍数，例如两倍速度就可以是2
+        /// 增加时间，参数是倍数，例如两倍速度就可以是2，如果成功增长一个进度则返回true
         /// </summary>
         /// <param name="multiplier"></param>
         /// <returns></returns>

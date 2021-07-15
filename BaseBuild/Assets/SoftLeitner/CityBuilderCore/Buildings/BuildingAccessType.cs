@@ -6,15 +6,15 @@
     public enum BuildingAccessType
     {
         /// <summary>
-        /// use any point around the building
+        /// 建筑周围的任意点
         /// </summary>
         Any = 0,
         /// <summary>
-        /// use only the specified point
+        /// 特殊点
         /// </summary>
         Exclusive = 10,
         /// <summary>
-        /// try to use the specified point if possible, otherwise use any
+        /// 如果有特殊点就用，没有就任意
         /// </summary>
         Preferred = 20
     }

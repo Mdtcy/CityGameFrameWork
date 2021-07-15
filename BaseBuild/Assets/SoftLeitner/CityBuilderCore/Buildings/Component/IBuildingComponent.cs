@@ -20,16 +20,19 @@
         IBuilding Building { get; set; }
 
         /// <summary>
+        /// 初始化 用于创建引用，注册<br/>
         /// initialization is performed once when the building is placed<br/>
         /// use to create references, register traits, ...
         /// </summary>
         void InitializeComponent();
         /// <summary>
+        /// 终止，用于取消注册，删除引用<br/>
         /// termination is performed when the building is destroyed<br/>
         /// use to deregister traits, remove references from other systems
         /// </summary>
         void TerminateComponent();
         /// <summary>
+        /// 用于将资源，引用转到被替换的建筑上
         /// called when a component gets replaced<br/>
         /// use to transfer resources, replace references
         /// </summary>

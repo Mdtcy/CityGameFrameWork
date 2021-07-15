@@ -12,6 +12,9 @@ namespace CityBuilderCore
     {
         public override string Key => "GEN";
 
+        /// <summary>
+        /// 例如 89-90中间就是Generating，到了90那一下就是Done
+        /// </summary>
         public enum GenerationState
         {
             Generating,// progress going up according to efficiency
@@ -29,6 +32,7 @@ namespace CityBuilderCore
             updateGeneration();
         }
 
+        // todo
         public override void OnReplacing(IBuilding replacement)
         {
             base.OnReplacing(replacement);

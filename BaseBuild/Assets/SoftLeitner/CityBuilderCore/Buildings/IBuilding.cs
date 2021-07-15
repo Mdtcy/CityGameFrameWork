@@ -23,6 +23,7 @@ namespace CityBuilderCore
         /// </summary>
         Guid Id { get; set; }
         /// <summary>
+        /// 不会改变的元信息，可以用来比较建筑类型
         /// meta info for data that does not change between instances of a building<br/>
         /// can be used to compare types of buildings
         /// </summary>
@@ -34,6 +35,7 @@ namespace CityBuilderCore
         Transform Pivot { get; }
 
         /// <summary>
+        /// Grid上的坐标
         /// origin(bottomLeft) point on the grid, stays constant when rotated
         /// </summary>
         Vector2Int Point { get; }
@@ -55,11 +57,13 @@ namespace CityBuilderCore
         BuildingRotation Rotation { get; }
 
         /// <summary>
+        /// 0-1 效率
         /// how efficient the building currently is, influenced by all parts implementing <see cref="IEfficiencyFactor"/><br/>
         /// ranges from 0-1, a building with half its employees would have 0.5 efficiency
         /// </summary>
         float Efficiency { get; }
         /// <summary>
+        /// 效率是否是不成熟的
         /// whether a buildings efficiency is indisturbed<br/>
         /// for example a farm on semi ideal land might not have full efficiency while still working
         /// </summary>
@@ -72,11 +76,13 @@ namespace CityBuilderCore
         string GetDescription();
 
         /// <summary>
+        /// 初始化，替换时不会调用<br/>
         /// one time initialization for buildings<br/>
         /// is not called when a building is replaced
         /// </summary>
         void Initialize();
         /// <summary>
+        /// 终止，destroy
         /// de-initializes the buildings and destroys it
         /// </summary>
         void Terminate();

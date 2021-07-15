@@ -4,6 +4,7 @@ using UnityEngine;
 namespace CityBuilderCore
 {
     /// <summary>
+    /// 建筑配置信息
     /// meta info for data that does not change between instances of a building<br/>
     /// can be used to compare buildings(is that building a silo?)
     /// </summary>

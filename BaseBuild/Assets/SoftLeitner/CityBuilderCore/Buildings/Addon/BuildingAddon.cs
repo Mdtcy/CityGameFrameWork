@@ -3,6 +3,7 @@
 namespace CityBuilderCore
 {
     /// <summary>
+    /// 运行时添加，替换之后延续，可用于特效，状态，动画
     /// temporary building parts that are added and removed at runtime and carry over when a building is replaced<br/>
     /// can be used for effects, statuses, animations, ...
     /// </summary>
