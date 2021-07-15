@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Info: {fileID: 11400000, guid: f0efe21605c5be94e9143e16f7825fd7, type: 2}
-  Pivot: {fileID: 0}
+  Pivot: {fileID: 810280250}
 --- !u!114 &49853100
 MonoBehaviour:
   m_ObjectHideFlags: 0
