@@ -5,6 +5,7 @@ using UnityEngine;
 namespace CityBuilderCore
 {
     /// <summary>
+    /// 定期生成Item的Building组件（速度受效率影响）
     /// building component that periodically generates items(speed influenced by efficiency)
     /// </summary>
     public class GenerationComponent : ProgressComponent, IGenerationComponent
@@ -13,8 +14,8 @@ namespace CityBuilderCore
 
         public enum GenerationState
         {
-            Generating,//progress going up according to efficiency
-            Done//waiting for items to be collected
+            Generating,// progress going up according to efficiency
+            Done//等待被收集中 waiting for items to be collected
         }
 
         public ItemProducer[] ItemsProducers;
@@ -44,6 +45,8 @@ namespace CityBuilderCore
             }
         }
 
+        #region IGenerationComponent
+
         public void Collect(ItemStorage storage, Item[] items)
         {
             foreach (var producer in ItemsProducers)
@@ -52,6 +55,8 @@ namespace CityBuilderCore
                     producer.Storage.MoveItemsTo(storage);
             }
         }
+
+        #endregion
 
         private void updateGeneration()
         {

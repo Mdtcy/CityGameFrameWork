@@ -4,8 +4,8 @@ using UnityEngine;
 namespace CityBuilderCore
 {
     /// <summary>
-    /// building component that spawns walkers that collect items from <see cref="IGenerationComponent"/><br/>
-    /// the collected items are either stored in global storage(set <see cref="Storage"/> to Global) or distributed using a <see cref="DeliveryWalker"/>
+    /// 生成可以收集物品的Walker <see cref="IGenerationComponent"/><br/>
+    /// 收集的物品可以存储到全局存储(set <see cref="Storage"/> to Global)或分发给 <see cref="DeliveryWalker"/>
     /// </summary>
     public class CollectionComponent : BuildingComponent, IItemGiver
     {

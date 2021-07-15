@@ -5,8 +5,8 @@ using UnityEngine;
 namespace CityBuilderCore
 {
     /// <summary>
-    /// roams around and collects items from the <see cref="IGenerationComponent"/> it encounters<br/>
-    /// the kinds of items it collects must be configured in <see cref="Items"/>
+    /// 四处游荡，从<see cref="IGenerationComponent"/><br/>
+    /// 收集的Item种类必须配置<see cref="Items"/>
     /// </summary>
     public class CollectionWalker : BuildingComponentWalker<IGenerationComponent>
     {

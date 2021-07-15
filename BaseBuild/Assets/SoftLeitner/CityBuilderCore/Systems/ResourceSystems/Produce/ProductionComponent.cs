@@ -5,9 +5,9 @@ using UnityEngine;
 namespace CityBuilderCore
 {
     /// <summary>
-    /// building component that periodically consumes and produces items<br/>
-    /// production time is only started once the consumption items are all there<br/>
-    /// consumption items have to be provided by others, produced items get shipped with <see cref="DeliveryWalker"/>
+    /// 定期消耗和生产的组件<br/>
+    /// 消耗的东西集齐才会开始生产<br/>
+    /// 消耗的物品必须由other提供, produced items get shipped with <see cref="DeliveryWalker"/>
     /// </summary>
     public class ProductionComponent : ProgressComponent, IProductionComponent
     {
